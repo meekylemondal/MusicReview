@@ -1,0 +1,17 @@
+body{
+    background-color: turquoise;
+}
+
+td{
+    border: 4px solid black;
+}
+
+table{
+    margin: 0 auto;
+    border-collapse: unset;
+}
+
+#album-cover{
+    width: 100px;
+    height: 100px;
+}
