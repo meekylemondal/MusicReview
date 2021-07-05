@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Table Testing</title>
+        <title>Meekyle's Music</title>
         <link href="main-css.css" rel="stylesheet">
         <!--Creating the connection between the webpage and the google sheets database-->
         <script src="https://cdn.jsdelivr.net/npm/drive-db"></script>
     </head>
     <body onload="loadData()">
+        <div id='intro'>
+            <div id='intro-picture'>
+                <img src='Images/IMG_0285.png'>
+            </div>
+            <div id='intro-message'>
+                <p>Hello! Welcome to <strong>Meekyle's Music</strong>. This is a website run by me (Meekyle Mondal), where I talk about the music that I listen to 
+                    and my thoughts on them. I like coding, and listening to music, so what better way is there to combine the two than to create a 
+                    website for my music takes. I am by no means an expert in music, quite frankly, I don't know what I'm talking about for the most 
+                    part. <strong>SO, if you don't agree with any of my takes, all power to ya, it's an opinion at the end of the day, there's nothing wrong 
+                    with them being different.</strong>
+                    <br><br>
+                    If you want to reach me, be it for suggesting an album I should check out, or for any other inquiries, please direct them to 
+                    <strong>meekylemondal123@gmail.com</strong>
+                </p>
+            </div>
+        </div>
+
+        <div id='table-of-contents-div'>
+            <p>Can't be asked to scroll through all the reviews? No worries, I have all the ones I've reviewed in the table of contents below.</p>
+            <br>
+            <table id='table-of-contents'>
+                <tr>
+                    <th>Album Name:</th>
+                </tr>
+            </table>
+        </div>
+
+        <div id='review-table-div'></div>
         <script src="main.js"></script>
     </body>
 </html>
