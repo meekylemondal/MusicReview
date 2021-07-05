@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--Setting the title of the webpage-->
         <title>Meekyle's Music</title>
+        <!--Linking the css file for styling purposes-->
         <link href="main-css.css" rel="stylesheet">
+        <!--Setting the favicon-->
+        <link rel='icon' type='image/png' href='Images/glory.png'>
         <!--Creating the connection between the webpage and the google sheets database-->
         <script src="https://cdn.jsdelivr.net/npm/drive-db"></script>
+
     </head>
+    <!--Calling the loadData() function when the webpage loads to fill out the review table-->
     <body onload="loadData()">
+        <!--Quick intro about the creator of the website (me)-->
         <div id='intro'>
             <div id='intro-picture'>
-                <img src='Images/IMG_0285.png'>
+                <img src='IMG_0285.png'>
             </div>
             <div id='intro-message'>
                 <p>Hello! Welcome to <strong>Meekyle's Music</strong>. This is a website run by me (Meekyle Mondal), where I talk about the music that I listen to 
@@ -24,6 +31,8 @@
             </div>
         </div>
 
+        <!--Container for the table of contents, will contain quick links to each review instead of requiring the user to scroll through in the 
+        hopes of finding the album they want to see my review of-->
         <div id='table-of-contents-div'>
             <p>Can't be asked to scroll through all the reviews? No worries, I have all the ones I've reviewed in the table of contents below.</p>
             <br>
@@ -34,6 +43,7 @@
             </table>
         </div>
 
+        <!--Container that will contain the table in which I have my reviews and thoughts listed-->
         <div id='review-table-div'></div>
         <script src="main.js"></script>
     </body>
