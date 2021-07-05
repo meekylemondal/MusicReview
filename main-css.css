@@ -1,17 +1,141 @@
+/*WILL NEED TO RE-ARRANGE THIS TO MAKE IT A LOT CLEARER*/
+
 body{
-    background-color: turquoise;
+    background-color: #210070;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #213970
+}
+
+
+#intro{
+    background-color: rgb(250, 250, 210);
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 60%;
+    padding: 20px;
+    border: 2px solid gold;
+    height: 420px;
+}
+
+#intro-picture img{ 
+    float: left;
+    height: 400px;
+    width: 300px;
+    margin-left: 100px;
+    box-shadow: -10px 10px gold;
+}
+
+#intro-message{
+    float: right;
+    width: 36%;
+    padding: 20px;
+    margin-right: 50px;
+    box-shadow: 10px 10px gold;
+    background-color: rgb(240, 230, 140);
+
 }
 
 td{
-    border: 4px solid black;
+    border: 2px solid black;
+    background-color: white;
 }
 
-table{
-    margin: 0 auto;
-    border-collapse: unset;
+
+#review-table{
+    margin: 40px auto;
+    border-collapse: collapse;
+    width: 70%;
 }
 
+/*This div basically encompases the actual album cover, we don't want it to be too large*/
 #album-cover{
-    width: 100px;
-    height: 100px;
+    width: 175px;
+    height: 175px;
+    margin: 40px 40px;;
+    border: 2px solid black;
+    box-shadow: 0px 40px 37px -28px black;
+
+}
+
+#album-cover-id{
+    background-color: white;
+}
+
+#artist-name-id{
+    width: 50%;
+    text-align: center;
+}
+
+#rating-id{
+    width: 50%;
+    text-align: center;
+}
+
+#album-title{
+    font-weight: bold;
+    background-color: black;
+    text-align: center;
+}
+
+#link {
+    color: gold;
+}
+
+#link:hover{
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#thoughts{
+    padding: 20px;
+}
+
+#review-table-div{
+    width: 70%;
+    background-color: lightcyan;
+    float: right;
+}
+
+#table-of-contents-div{
+    width: 29%;
+    float: left;
+    margin: 0 auto;
+    border: 2px solid black;
+    outline: 4px solid gold;
+}
+
+#table-of-contents-div p{
+    color: gold;
+    font-weight: bold;
+    text-align: center;
+}
+#table-of-contents{
+    margin: 0 auto;
+}
+
+#table-of-contents td{
+    background-color: white;
+    border: 2px solid black;
+    width: 450px;
+}
+
+#table-of-contents td:hover{
+    background-color: lightyellow;
+}
+#tableOfContentsLink{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tableOfContentsLink:hover{
+    text-decoration: underline;
+}
+
+th{
+    color: gold;
 }
