@@ -4,9 +4,6 @@
 // - ADDING MULTIPLE PAGES MAYBE?
 // - MAYBE ADD SINGLE REVIEWS AS WELL?
 
-// ADD SOME BETTER COMMENTS TO THIS FILE! 
-
-
 // This function gathers the entries from the google sheets file and then passes each row 1 at a time to the createTable function to create a
 // table for each album
 async function loadData(){
@@ -42,7 +39,8 @@ function createTableOfContents(row, albumNumber){
     let rowArray = Object.values(row);
     for (let col = 0; col < 1; col++){
         let col1 = document.createElement("td");
-
+        
+        // Setting up the links that will redirect to their respective albums when clicked 
         let link = document.createElement('a');
         let message = document.createTextNode(rowArray[1]);
         link.appendChild(message);
@@ -50,7 +48,6 @@ function createTableOfContents(row, albumNumber){
         link.href = '#' + rowArray[1];
         link.id = 'tableOfContentsLink';
 
-        let albumNameContents = document.createTextNode(rowArray[1]);
 
         // Adding the data to the td
         col1.appendChild(link);
