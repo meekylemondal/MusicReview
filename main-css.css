@@ -1,12 +1,13 @@
-/*WILL NEED TO RE-ARRANGE THIS TO MAKE IT A LOT CLEARER*/
-
+/*Setting up the formating for the background*/
 body{
     background-color: #210070;
     font-family: Arial, Helvetica, sans-serif;
     color: #213970
 }
-
-
+/*=================================================================================================================================================*/
+/*=============================================================== INTRO ===========================================================================*/
+/*=================================================================================================================================================*/
+/*Setting up the formating for the intro div*/
 #intro{
     background-color: rgb(250, 250, 210);
     margin: 0 auto;
@@ -17,14 +18,16 @@ body{
     height: 420px;
 }
 
+/*Setting the formating for any image in the intro-picture div*/
 #intro-picture img{ 
     float: left;
     height: 400px;
     width: 300px;
     margin-left: 100px;
-    box-shadow: -10px 10px gold;
+    border: 2px solid goldenrod;
 }
 
+/*Setting the formating for the intro-message div*/
 #intro-message{
     float: right;
     width: 36%;
@@ -35,16 +38,88 @@ body{
 
 }
 
+/*Setting the formating for any td elements*/
 td{
     border: 2px solid black;
     background-color: white;
 }
 
 
+
+/*=================================================================================================================================================*/
+/*============================================================ TABLE OF CONTENTS ==================================================================*/
+/*=================================================================================================================================================*/
+
+/*Setting up the formating for the div that will contain the table of contents*/
+#table-of-contents-div{
+    width: 29%;
+    float: left;
+    margin: 0 auto;
+    border: 2px solid black;
+    outline: 4px solid gold;
+    background-color: lightyellow;
+}
+
+/*Setting up some formating for the table of contents itself*/
+#table-of-contents{
+    margin: 0 auto;
+}
+
+/*Setting up the formating for the <p> elements located strictly within the table-of-contents div*/
+#table-of-contents-div p{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Setting up the formating for the <td> elements located specifically within the table-of-contents div*/
+#table-of-contents td{
+    background-color: white;
+    border: 2px solid black;
+    width: 450px;
+}
+
+/*Setting up the behaviour for the <td> elements in the table-of-contents div when they are hovered on*/
+#table-of-contents td:hover{
+    background-color: lightyellow;
+}
+
+/*Formating for the links that appear in the table-of-contents div*/
+#tableOfContentsLink{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Regarding the aforementioned links, this specifies the behaviour of the links when they are hovered upon*/
+#tableOfContentsLink:hover{
+    text-decoration: underline;
+}
+
+/*Formating the <th> elements*/
+th{
+    color: black;
+}
+
+
+
+/*=================================================================================================================================================*/
+/*============================================================ REVIEW =============================================================================*/
+/*=================================================================================================================================================*/
+
+/*Setting up the formating for the actual review table*/
 #review-table{
     margin: 40px auto;
     border-collapse: collapse;
     width: 70%;
+}
+
+/*Setting up the formating for the div that contains the review table*/
+#review-table-div{
+    width: 70%;
+    background-color: lightcyan;
+    float: right;
 }
 
 /*This div basically encompases the actual album cover, we don't want it to be too large*/
@@ -57,26 +132,19 @@ td{
 
 }
 
+/*Setting the formating for the album cover segment of the table*/
 #album-cover-id{
     background-color: white;
 }
 
-#artist-name-id{
-    width: 50%;
-    text-align: center;
-}
-
-#rating-id{
-    width: 50%;
-    text-align: center;
-}
-
+/*Setting the formating for the album title segment of the review*/
 #album-title{
     font-weight: bold;
     background-color: black;
     text-align: center;
 }
 
+/*Setting the formating for the link and when you (the user) hover over the link*/
 #link {
     color: gold;
 }
@@ -89,53 +157,19 @@ a {
     color: black;
 }
 
-#thoughts{
-    padding: 20px;
-}
-
-#review-table-div{
-    width: 70%;
-    background-color: lightcyan;
-    float: right;
-}
-
-#table-of-contents-div{
-    width: 29%;
-    float: left;
-    margin: 0 auto;
-    border: 2px solid black;
-    outline: 4px solid gold;
-}
-
-#table-of-contents-div p{
-    color: gold;
-    font-weight: bold;
+/*Setting the formating for the artist's name segment of the review*/
+#artist-name-id{
+    width: 50%;
     text-align: center;
 }
-#table-of-contents{
-    margin: 0 auto;
+
+/*Setting the formating for the rating segment of the review*/
+#rating-id{
+    width: 50%;
+    text-align: center;
 }
 
-#table-of-contents td{
-    background-color: white;
-    border: 2px solid black;
-    width: 450px;
-}
-
-#table-of-contents td:hover{
-    background-color: lightyellow;
-}
-#tableOfContentsLink{
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#tableOfContentsLink:hover{
-    text-decoration: underline;
-}
-
-th{
-    color: gold;
+/*Setting the formating for the thoughts segment of the review*/
+#thoughts{
+    padding: 20px;
 }
