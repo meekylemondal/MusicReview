@@ -118,7 +118,7 @@ td{
 #table-of-contents-div{
     width: 29%;
     float: left;
-    margin: 40px auto;
+    margin: 40px 10px;
     border: 2px solid black;
     outline: 4px solid gold;
     background-color: lightyellow;
