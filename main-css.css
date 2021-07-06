@@ -83,22 +83,14 @@ body{
     overflow: auto;
 }
 
-/*Setting the formating for any image in the intro-picture div*/
-#intro-picture img{ 
-    float: left;
-    height: 400px;
-    width: 300px;
-    border: 2px solid goldenrod;
-}
 
 /*Setting the formating for the intro-message div*/
 #intro-message{
-    float: right;
-    width: 36%;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 20px;  
     box-shadow: 10px 10px gold;
     background-color: rgb(240, 230, 140);
-    font-size: 14px;
+    font-size: 20px;
 
 }
 
