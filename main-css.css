@@ -1,12 +1,12 @@
 /*Setting up some fonts that will be used in the webpage*/
 @font-face{
     font-family: 'Roboto';
-    src: url(Fonts/Roboto/Roboto-Light.ttf);
+    src: url(Fonts/Roboto-Light.ttf);
 }
 
 @font-face{
     font-family: 'Roboto Bold';
-    src: url(Fonts/Roboto/Roboto-Bold.ttf);
+    src: url(Fonts/Roboto-Bold.ttf);
 }
 
 /*Setting up the formating for the background*/
