@@ -56,13 +56,13 @@ body{
     font-family: 'Roboto Bold';
     border-top: 4px solid gold;
     border-bottom: 4px solid gold;
+    background-color: lightyellow;
 }
 
 #introheading h2, #reviewheading h2 {
     text-align: center;
     font-size: 64px;
     color: black;
-    background-color: lightyellow;
     text-decoration: underline;
 }
 
