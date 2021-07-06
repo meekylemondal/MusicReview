@@ -80,6 +80,7 @@ body{
     padding: 20px;
     border: 2px solid gold;
     height: 420px;
+    overflow: auto;
 }
 
 /*Setting the formating for any image in the intro-picture div*/
