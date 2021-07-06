@@ -87,7 +87,6 @@ body{
     float: left;
     height: 400px;
     width: 300px;
-    margin-left: 100px;
     border: 2px solid goldenrod;
 }
 
@@ -96,7 +95,6 @@ body{
     float: right;
     width: 36%;
     padding: 20px;
-    margin-right: 50px;
     box-shadow: 10px 10px gold;
     background-color: rgb(240, 230, 140);
 
