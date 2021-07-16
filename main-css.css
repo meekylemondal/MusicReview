@@ -213,6 +213,7 @@ th{
     margin: 40px auto;
     border-collapse: collapse;
     width: 70%;
+    margin-bottom: 20px;
 }
 
 /*Setting up the formating for the div that contains the review table*/
