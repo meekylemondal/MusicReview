@@ -1,5 +1,4 @@
 // NEXT STEPS:
-// - HAVE SOME SORT OF INTRO WHEN YOU FIRST GO ONTO THE WEBPAGE?
 // - HOW DO YOU WORK WITH WEBHOOKS?
 // - ADDING MULTIPLE PAGES MAYBE?
 // - MAYBE ADD SINGLE REVIEWS AS WELL?
@@ -14,12 +13,13 @@ async function loadData(){
     let counter = data.length;
 
     data.forEach(row =>{
-        // Function that will create the table with the actual reviews
-        createTable(row, counter);
         // Function here that will create a table of contents of sorts
         createTableOfContents(row, counter);
         counter--;
     })
+
+    // Should only show the most recent review, to avoid the website from becoming far too long
+    createTable(data[0], data.length);
 }
 
 function createTableOfContents(row, albumNumber){
@@ -45,20 +45,15 @@ function createTableOfContents(row, albumNumber){
         let message = document.createTextNode(rowArray[1]);
         link.appendChild(message);
 
-        link.href = '#' + rowArray[1];
+        link.onclick = function() {removeInfo(row, albumNumber)};
         link.id = 'tableOfContentsLink';
-
 
         // Adding the data to the td
         col1.appendChild(link);
 
         // Adding the td to the tr
         tableOfContentRow.appendChild(col1);
-
-
     }
-
-
     // Adding the tr to the table 
     table.appendChild(tableOfContentRow);
 
@@ -69,6 +64,17 @@ function createTableOfContents(row, albumNumber){
     body.appendChild(tableDiv);
 
 }
+
+// Function here that will clean the canvas
+function removeInfo(row, albumNumber){
+    const parentNode = document.getElementById("review-table-div");
+    while (parentNode.lastElementChild){
+        parentNode.removeChild(parentNode.lastElementChild);
+    }
+
+    createTable(row, albumNumber);
+}
+
 
 // Add an array param (dedicated to each row of the table, that will upload the data)
 function createTable(row, albumNumber){
