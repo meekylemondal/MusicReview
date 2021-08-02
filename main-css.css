@@ -213,6 +213,7 @@ th{
     margin: 40px auto;
     border-collapse: collapse;
     width: 70%;
+    height: 450px;
 }
 
 /*Setting up the formating for the div that contains the review table*/
@@ -222,6 +223,7 @@ th{
     float: right;
     margin-top: 36px;
     margin-bottom: 36px;
+    overflow: auto;
 }
 
 /*This div basically encompases the actual album cover, we don't want it to be too large*/
