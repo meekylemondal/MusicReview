@@ -1,0 +1,277 @@
+/*Setting up some fonts that will be used in the webpage*/
+@font-face{
+    font-family: 'Roboto';
+    src: url(Fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face{
+    font-family: 'Roboto Bold';
+    src: url(Fonts/Roboto/Roboto-Bold.ttf);
+}
+
+/*Setting up the formating for the background*/
+body{
+    background-color: #210070;
+    font-family: 'Roboto';
+    color: #213970;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+    
+
+/*=================================================================================================================================================*/
+/*============================================================== TITLE ============================================================================*/
+/*=================================================================================================================================================*/
+
+
+/*Formating the elements included in the title of the webpage*/
+#title{
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Roboto Bold';
+}
+
+#title h1{
+    color: gold;
+    margin: 0;
+    margin-top: 40px;
+    padding: 40px;
+    font-size: 128px;
+    text-align: center;
+
+}
+
+#title p{
+    font-size: 12px;
+    text-align: center;
+    color: gold;
+    margin-bottom: 40px;
+}
+
+/*=================================================================================================================================================*/
+/*================================================================== HEADINGS =====================================================================*/
+/*=================================================================================================================================================*/
+
+/*Formating the headings that appear in the webpage*/
+#introheading, #reviewheading{
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Roboto Bold';
+    border-top: 4px solid gold;
+    border-bottom: 4px solid gold;
+}
+
+#introheading h2, #reviewheading h2 {
+    text-align: center;
+    font-size: 64px;
+    color: gold;
+    text-decoration: underline;
+}
+
+#reviewheading{
+    margin-top: -200px;
+}
+/*=================================================================================================================================================*/
+/*=============================================================== INTRO ===========================================================================*/
+/*=================================================================================================================================================*/
+/*Setting up the formating for the intro div*/
+#intro-container{
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+#intro-heading{
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    background-color: rgb(240, 230, 140);
+    padding: 0;
+    height: 320px;
+    border-right: 1px solid white;
+    overflow: hidden;
+}
+
+#intro-heading h2{
+    text-align: center;
+    font-size: 64px;
+    padding-top: 80px;
+}
+
+#intro{
+    top: -320px;
+    background-color: rgb(250, 250, 210);
+    left: 50%;
+    z-index: 1;
+    position: relative;
+    width: 50%;
+    overflow: auto;
+}
+
+#intro-heading:hover{
+    animation-name: intro_heading_hover;
+    animation-duration: 0.70s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes intro_heading_hover{
+    from{width:100%; background-color:  rgb(240, 230, 140);}
+    to{width: 50%; background-color: rgb(202, 192, 99);}
+}
+
+
+/*Setting the formating for the intro-message div*/
+#intro-message{
+    margin: 0 auto;
+    padding: 20px;  
+    box-shadow: 10px 10px gold;
+    background-color: rgb(240, 230, 140);
+    font-size: 20px;
+}
+
+/*Setting the formating for any td elements*/
+td{
+    border: 2px solid black;
+    background-color: white;
+}
+
+
+
+/*=================================================================================================================================================*/
+/*============================================================ TABLE OF CONTENTS ==================================================================*/
+/*=================================================================================================================================================*/
+
+/*Setting up the formating for the div that will contain the table of contents*/
+#table-of-contents-div{
+    width: 29%;
+    float: left;
+    margin: 40px 10px;
+    border: 2px solid black;
+    outline: 4px solid gold;
+    background-color: lightyellow;
+    height: 450px;
+    overflow: auto;
+}
+
+/*Setting up some formating for the table of contents itself*/
+#table-of-contents{
+    margin: 0 auto;
+}
+
+/*Setting up the formating for the <p> elements located strictly within the table-of-contents div*/
+#table-of-contents-div p{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Setting up the formating for the <td> elements located specifically within the table-of-contents div*/
+#table-of-contents td{
+    background-color: white;
+    border: 2px solid black;
+    width: 450px;
+}
+
+/*Setting up the behaviour for the <td> elements in the table-of-contents div when they are hovered on*/
+#table-of-contents td:hover{
+    background-color: lightyellow;
+}
+
+/*Formating for the links that appear in the table-of-contents div*/
+#tableOfContentsLink{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Regarding the aforementioned links, this specifies the behaviour of the links when they are hovered upon*/
+#tableOfContentsLink:hover{
+    text-decoration: underline;
+}
+
+/*Formating the <th> elements*/
+th{
+    color: black;
+}
+
+
+
+/*=================================================================================================================================================*/
+/*============================================================ REVIEW =============================================================================*/
+/*=================================================================================================================================================*/
+
+/*Setting up the formating for the actual review table*/
+#review-table{
+    margin: 40px auto;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+/*Setting up the formating for the div that contains the review table*/
+#review-table-div{
+    width: 68%;
+    background-color: lightcyan;
+    float: right;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+/*This div basically encompases the actual album cover, we don't want it to be too large*/
+#album-cover{
+    width: 175px;
+    height: 175px;
+    margin: 40px 40px;;
+    border: 2px solid black;
+    box-shadow: 0px 40px 37px -28px black;
+
+}
+
+/*Setting the formating for the album cover segment of the table*/
+#album-cover-id{
+    background-color: white;
+}
+
+/*Setting the formating for the album title segment of the review*/
+#album-title{
+    font-weight: bold;
+    background-color: black;
+    text-align: center;
+}
+
+/*Setting the formating for the link and when you (the user) hover over the link*/
+#link {
+    color: gold;
+}
+
+#link:hover{
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Setting the formating for the artist's name segment of the review*/
+#artist-name-id{
+    width: 50%;
+    text-align: center;
+}
+
+/*Setting the formating for the rating segment of the review*/
+#rating-id{
+    width: 50%;
+    text-align: center;
+}
+
+/*Setting the formating for the thoughts segment of the review*/
+#thoughts{
+    padding: 20px;
+}

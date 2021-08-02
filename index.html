@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Setting the title of the webpage-->
+        <title>Mickey's Music</title>
+        <!--Linking the css file for styling purposes-->
+        <link href="main-css.css" rel="stylesheet">
+        <!--Setting the favicon-->
+        <link rel='icon' type='image/png' href='glory.png'>
+        <!--Creating the connection between the webpage and the google sheets database-->
+        <script src="https://cdn.jsdelivr.net/npm/drive-db"></script>
+
+    </head>
+    <!--Calling the loadData() function when the webpage loads to fill out the review table-->
+    <body onload="loadData()">
+        
+        <div id='title'>
+            <h1>MICKEY'S MUSIC</h1>
+            <p>***DISCLAIMER: THIS IS JUST FOR FUN, AND TO EXPERIMENT GETTING DATA FROM EXTERNAL SOURCES!***</p>
+        </div>>
+
+        <div id='intro-container'>
+            <div id='intro-heading'>
+                <h2>A QUICK INTRODUCTION..</h2>
+            </div>
+
+            <!--Quick intro about the creator of the website (me)-->
+            <div id='intro'>
+                <div id='intro-message'>
+                    <p>Hello! Welcome to <strong>Mickey's Music</strong>. This is a website run by me (Meekyle, yes that is me on the left), where I talk about the music that I listen to 
+                        and my thoughts on them. I like coding, and listening to music, so what better way is there to combine the two than to create a 
+                        website for my music takes. I am by no means an expert in music, quite frankly, I don't know what I'm talking about for the most 
+                        part. <strong>SO, if you don't agree with any of my takes, all power to ya, it's an opinion at the end of the day, there's nothing wrong 
+                        with them being different.</strong>
+                        <br><br>
+                        If you want to reach me, be it for suggesting an album I should check out, or for any other inquiries, please direct them to 
+                        <strong>ammrmondal@gmail.com</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id='reviewheading'>
+            <h2>ON TO THE REVIEWS: </h2>
+        </div>
+
+        <!--Container for the table of contents, will contain quick links to each review instead of requiring the user to scroll through in the 
+        hopes of finding the album they want to see my review of-->
+        <div id='table-of-contents-div'>
+            <p>Can't be asked to scroll through all the reviews? No worries, I have all the ones I've reviewed in the table of contents below.</p>
+            <br>
+            <table id='table-of-contents'>
+                <tr>
+                    <th>Album Name:</th>
+                </tr>
+            </table>
+        </div>
+
+
+        <!--Container that will contain the table in which I have my reviews and thoughts listed-->
+        <div id='review-table-div'></div>
+        <script src="main.js"></script>
+    </body>
+</html>
